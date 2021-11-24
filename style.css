@@ -1,0 +1,59 @@
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container{
+/*   height: 500px; */
+  height: 397px;
+  width: 60vw;
+  margin: 4em auto;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide{
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+
+
+.slide{
+  width:60vw;
+  height: 550px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#lastClone{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-1.jpg');
+}
+
+#slide1{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-2.jpg');
+}
+
+#slide2{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-3.jpg');
+}
+
+#slide3{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-4.jpg');
+}
+
+#slide4{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-5.jpg');
+}
+
+#slide5{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-1.jpg');
+}
+
+#firstClone{
+  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-2.jpg');
+}
