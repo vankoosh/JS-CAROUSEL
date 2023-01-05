@@ -2,17 +2,21 @@ const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 let counter = 1;
 let size = carouselImages[counter].clientWidth;
-const carouselTimer = 5000;
-
-
 
 // Translate x positioning to correct first image
-carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px';
+carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
 
 // Init Carousel Loop
 startCarousel();
 
-carouselSlide.addEventListener('transitionend', ()=>{
+function startCarousel() {
+  carouselLoop = setInterval(function () {
+    slideRight();
+    // slideLeft();
+  }, 4000);
+}
+
+carouselSlide.ontransitionend = ()=>{
   // console.log('fired');
   if (carouselImages[counter].id === 'lastClone') {
     carouselSlide.style.transition = "none";
@@ -27,15 +31,8 @@ carouselSlide.addEventListener('transitionend', ()=>{
     counter = carouselImages.length -counter;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
   }
-})
-
-function slideLeft() {
-  if(counter <= 0) return;
-  carouselSlide.style.transition = "transform 1s ease-in-out";
-  size = carouselImages[counter].clientWidth;
-  counter--;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
 }
+
 
 function slideRight() {
   if(counter >= carouselImages.length-1) return;
@@ -45,8 +42,11 @@ function slideRight() {
   carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
 }
 
-function startCarousel() {
-  carouselLoop = setInterval(function(){
-    slideRight();
-  }, carouselTimer);
-}
+// function slideLeft() {
+//   if(counter <= 0) return;
+//   carouselSlide.style.transition = "transform 1s ease-in-out";
+//   size = carouselImages[counter].clientWidth;
+//   counter--;
+//   carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
+// }
+

@@ -23,7 +23,7 @@
 
 .slide{
   width:60vw;
-  height: 550px;
+  height: 397px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -31,29 +31,29 @@
 }
 
 #lastClone{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-1.jpg');
+  background-image: url('imgs/slider-ac-1.jpg');
 }
 
 #slide1{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-2.jpg');
+  background-image: url('imgs/slider-ac-2.jpg');
 }
 
 #slide2{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-3.jpg');
+  background-image: url('imgs/slider-ac-3.jpg');
 }
 
 #slide3{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-4.jpg');
+  background-image: url('imgs/slider-ac-4.jpg');
 }
 
 #slide4{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-5.jpg');
+  background-image: url('imgs/slider-ac-5.jpg');
 }
 
 #slide5{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-1.jpg');
+  background-image: url('imgs/slider-ac-1.jpg');
 }
 
 #firstClone{
-  background-image: url('BARN DOOR CAROUSEL IMGS/slider-ac-2.jpg');
+  background-image: url('imgs/slider-ac-2.jpg');
 }
